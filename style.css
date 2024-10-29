@@ -59,7 +59,7 @@ nav a:hover {
     max-width: 700px;
     padding: 5px;
     border: 2px solid #ccc5b9;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -163,7 +163,7 @@ h3 {
 /* CONTACTO */
 
 form {
-    margin-bottom: 2rem;
+    padding: 30px 40px;
 }
 
 input {
@@ -181,6 +181,88 @@ form input , textarea {
     border-radius: 5px;
     margin-bottom: 5px;
     border-color: #ccc5b9;
+}
+
+/* REGISTER */
+
+.register-form-control {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: start;
+}
+
+.register-form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.register-form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    width: 96%;
+    padding: 10px;
+}
+
+.register-form-control i {
+    position: absolute;
+    visibility: hidden;
+    top: 40px;
+    right: 10px;
+}
+
+.register-form-control small {
+    visibility: hidden;
+    position: absolute;
+}
+
+.register-form button {
+    background-color: #252422;
+    border: 2px solid #252422;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.register-form button:hover {
+    background-color: #000000;
+}
+
+.register-form button:active {
+    background-color: #000000;
+    transform: translateY(4px);
+}
+
+.register-form-control.success input {
+    border-color: #2ecc71;
+}
+
+.register-form-control.error input {
+    border-color: #e74c3c;
+}
+
+.register-form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.register-form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.register-form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
 }
 
 /* FOOTER */
