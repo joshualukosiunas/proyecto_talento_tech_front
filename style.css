@@ -1,13 +1,14 @@
 body{
     margin: 0;
     font-family: "Libre Baskerville", Helvetica, Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #252422;
+    background-color: #23463F;
+    height: 100%;
 }
 
 /* NAV */
 
 nav {
-    background-color: #252422;
+    background-color: #23463F;
     overflow: hidden;
 }
 
@@ -22,7 +23,7 @@ nav li{
 }
 
 nav a{
-    color: #fffcf2;
+    color: #C5AF9F;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -32,14 +33,14 @@ nav a{
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: #252422;
+    background-color: #C5AF9F;
+    color: #23463F;
     transition: 0.3s ease-in;
 }
 
 .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #23463F;
+    color: #C5AF9F;
 }
 
 .logo{
@@ -52,13 +53,11 @@ nav a:hover {
 
 /* MENU-INDEX */
 
-.menu {
-    background-color: #ccc5b9;
+.main-container {
+    background-color: #23463F;
     display: block;
     margin: 45px auto;
-    max-width: 700px;
-    padding: 5px;
-    border: 2px solid #ccc5b9;
+    max-width: 700px;   
     border-radius: 5px;
     text-align: center;
 }
@@ -67,21 +66,29 @@ h2 {
     margin-top: 2em;
     margin-bottom: 2em;
     font-size: 3rem;
+    color: #C5AF9F;
 }
 
 h3 {
     font-size: 1.5rem;
+    color: #C5AF9F;
 }
 
 .menu-option {
     font-weight: bold;
     text-align: start;
+    color: #C5AF9F;
+    margin-top: 1rem;
 }
 
 .menu-description {
     font-weight: lighter;
     font-style: italic;
     list-style: none;
+}
+
+p {
+    color: #C5AF9F;
 }
 
 /* NOSOTROS */
@@ -108,80 +115,85 @@ h3 {
     height: 12rem;
 }
 
+/* RESEÑAS */
 
-/* CONTACTO */
-
-.cuestionario{
-    background-color: #ccc5b9;
-    display: block;
-    margin: 45px auto;
-    max-width: 700px;
-    padding: 5px;
-    border: 2px solid #ccc5b9;
-    border-radius: 10px;
-}
-
-.titulo , .preguntas{
-    display: block;
+.reviews-container h2{
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.reviews-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vw;
+}
+
+.card {
+    padding: 2em;
+    border: 1px solid #C5AF9F;
+    border-radius: 10px;
+    background-color: #23463F;
     text-align: center;
-    max-width: 600px;
-    padding: 0.2em;
-    color: #252422;
+    box-shadow: 0 30px 10px -20px #0000002a;
 }
 
-.titulo{
-    margin-top: 1em;
-    border: 2px solid #eb5e28;
-    border-radius: 10px;
+.card img {
+    width: 100px;
 }
-
-.preguntas{
-    margin-top: 1em;
-    border: 2px solid #eb5e28;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 1em;
-}
-
-.preguntas ul{
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-.img_hobbies{
-    width: 300px;
-    margin: 0.5em;
-    border-radius: 10px;
-}
-
-
 
 /* CONTACTO */
 
-form {
-    padding: 30px 40px;
+.contact-container {
+    background-color: #23463F;
+    display: flex;
+    width: 100%;
+    height: 73vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-input {
-    border-color: #ccc5b9;
-    border: none;
-    border-radius: 5px;
+form{
+    background: #23463F;
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 4vw 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-textarea {
-    width:10.1rem;
-    height: 100px;
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 12px;
+    outline: none;
+    background: #C5AF9F;
+    font-size: 15px;
+    width: 100%;
 }
 
-form input , textarea {
-    border-radius: 5px;
-    margin-bottom: 5px;
-    border-color: #ccc5b9;
+form .input-submit {
+    padding: 15px;
+    background: #C5AF9F;
+    color: #23463F;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }
+
 
 /* REGISTER */
 
@@ -270,12 +282,13 @@ form input , textarea {
 footer {
     position: relative;
     width: 100%;
-    background-color: #252422;
+    background-color: #23463F;
     min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 1.2em;
 }
 
 .footer-rights {
@@ -297,7 +310,7 @@ footer {
 }
 
 .icon {
-    color: #fffcf2;
+    color: #C5AF9F;
     font-size: 32px;
     display: inline-block;
     margin: 0 10px;
@@ -323,7 +336,7 @@ footer {
 }
 
 .footer-icon {
-    color: #fffcf2;
+    color: #C5AF9F;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
@@ -337,9 +350,96 @@ footer {
 }
 
 .footer-rights {
-    color: #fffcf2;
+    color: #C5AF9F;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 12px;
 }
+
+@media (max-width: 600px) {
+
+    /* MENU-INDEX */
+    .main-container {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    h2 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 3rem;
+        color: #C5AF9F;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: #C5AF9F;
+    }
+
+    .menu-option {
+        font-weight: bold;
+        text-align: start;
+        color: #C5AF9F;
+        margin-top: 1rem;
+    }
+
+    .menu-description {
+        font-weight: lighter;
+        font-style: italic;
+        list-style: none;
+    }
+
+    p {
+        color: #C5AF9F;
+    }
+
+    /* NOSOTROS */
+
+    .maps-container {
+        flex-direction: column ;
+    }
+
+    .main-container{
+        width: 65vw;
+    }
+
+    .maps {
+        width: 65vw;
+    }
+
+
+    /* RESEÑAS */
+
+    .reviews-container h2{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    .reviews-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* CONTACTO */
+
+    .contact-container {
+        height: 100vh;
+    }
+        
+    form input, form textarea {
+        font-size: 15px;
+        width: 65vw;
+    }
+
+
+    
+  }
