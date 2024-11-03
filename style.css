@@ -181,6 +181,7 @@ form input, form textarea {
     font-size: 15px;
     width: 100%;
     border-radius: 30px;
+    color: #23463F;
 }
 
 form .input-submit {
@@ -192,8 +193,11 @@ form .input-submit {
     outline: none;
     cursor: pointer;
     width: 150px;
-    margin: 20px auto 0;
     border-radius: 30px;
+}
+
+form ::placeholder {
+    color: #23463F;
 }
 
 
