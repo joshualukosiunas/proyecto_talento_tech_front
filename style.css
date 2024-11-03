@@ -28,14 +28,15 @@ nav a{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    border-radius: 10px;
+    border-radius: 30px;
     display: inline-block;
+    transition: 0.3s;
 }
 
 nav a:hover {
     background-color: #C5AF9F;
     color: #23463F;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in-out;
 }
 
 .topnav a.active {
